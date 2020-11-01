@@ -18,10 +18,12 @@
             <i class="file pdf outline icon"></i>
               Create + Print Labels
             </button>
+
             </form>
             <!-- table goes here --> 
 
-            <?php include_once "./deleted/sandbox/checkbox-form.php" ?>
+            <?php include_once "./deleted/sandbox/checkbox-form.php"?>
+      
           </div>         
 <?php
 

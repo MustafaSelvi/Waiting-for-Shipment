@@ -233,6 +233,10 @@
         </div>
       </div>
 <script>
+  $("#new-user-button").click( function(){
+              $("#customer-details-modal").modal("show");
+        });
+
   $(document).ready( function () {
             $('#admin-tablo').DataTable();
             console.log("calışır");
