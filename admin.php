@@ -232,9 +232,27 @@
           <?php include_once "./admin/customer-table.html" ?>
         </div>
       </div>
+      <div class="ui modal" id="new-user-modal">
+        <!-- customer's general form --> 
+        <h2 class="ui header" style="margin-bottom:20px;">ADD CUSTOMER</h2>
+        
+        <form class="ui form" style="margin:10px;">
+        <h4 class="ui dividing header">Shipping Information</h4>
+          <div class="field">
+            <label>Name</label>
+            <div class="two fields">
+              <div class="field">
+                <input type="text" name="shipping[first-name]" placeholder="First Name">
+              </div>
+              <div class="field">
+                <input type="text" name="shipping[last-name]" placeholder="Last Name">
+              </div>
+            </div>
+          </div>
+      </div>
 <script>
   $("#new-user-button").click( function(){
-              $("#customer-details-modal").modal("show");
+              $("#new-user-modal").modal("show");
         });
 
   $(document).ready( function () {
