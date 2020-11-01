@@ -1,0 +1,80 @@
+<table id="customer-detais-table" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Customer Name</th>
+            <th>Phone Number</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tiger Nixon</td>
+            <td>+905327986858</td>
+            <td>
+                <!--
+                <div class="ui dropdown" id="customer-details-table">
+                <input type="hidden" name="gender">
+                <i class="dropdown icon"></i>
+                <div class="black text">Gender</div>
+                <div class="menu">
+                  <div class="item" data-value="male">Male</div>
+                  <div class="item" data-value="female">Female</div>
+                </div>
+              </div>
+              -->
+              <div class="ui icon buttons" id="customer-details-dropdown">
+                <div class="ui top left pointing dropdown button">
+                  <i class="user icon"></i>
+                  <div class="menu">
+                    <div class="item"><i class="edit icon"></i>Edit User</div>
+                    <div class="item"><i class="delete icon"></i>Remove User</div>
+                    <div class="item"><i class="hide icon"></i>Make Invisible</div>
+                  </div>
+                </div>
+                <div class="ui top left pointing dropdown button">
+                  <i class="users icon"></i>
+                  <div class="menu">
+                    <div class="item"><i class="edit icon"></i>Edit Group</div>
+                    <div class="item"><i class="delete icon"></i>Remove Group</div>
+                    <div class="item"><i class="hide icon"></i>Hide from Group</div>
+                  </div>
+                </div>
+                <div class="ui top right pointing dropdown button">
+                  <i class="settings icon"></i>
+                  <div class="menu">
+                    <div class="item"><i class="edit icon"></i> Edit</div>
+                    <div class="item"><i class="delete icon"></i> Remove</div>
+                    <div class="item"><i class="hide icon"></i> Hide</div>
+                  </div>
+                </div>
+              </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Donna Snider</td>
+            <td>+905323895969</td>
+            <td>145</td>
+        </tr>
+        <tr>
+            <td>Sami Goncagül</td>
+            <td>+905323895139</td>
+            <td>134</td>
+        </tr>
+        <tr>
+            <td>Mahmut Cansever</td>
+            <td>+905338090939</td>
+            <td>130</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Customer Name</th>
+            <th>Phone Number</th>
+            <th>Label Created</th>
+        </tr>
+    </tfoot>
+</table>
+
+<script>
+    $('#customer-detais-table').DataTable();
+</script>
