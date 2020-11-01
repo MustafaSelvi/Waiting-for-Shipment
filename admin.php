@@ -234,22 +234,56 @@
       </div>
       <div class="ui modal" id="new-user-modal">
         <!-- customer's general form --> 
-        <h2 class="ui header" style="margin-bottom:20px;">ADD CUSTOMER</h2>
+        <h2 class="ui header" style="margin-bottom:20px;">Add Customer</h2>
         
         <form class="ui form" style="margin:10px;">
-        <h4 class="ui dividing header">Shipping Information</h4>
+        <h4 class="ui dividing header">Customer Information</h4>
           <div class="field">
             <label>Name</label>
             <div class="two fields">
               <div class="field">
-                <input type="text" name="shipping[first-name]" placeholder="First Name">
+                <input type="text" name="customer[first-name]" placeholder="First Name">
               </div>
               <div class="field">
-                <input type="text" name="shipping[last-name]" placeholder="Last Name">
+                <input type="text" name="customer[last-name]" placeholder="Last Name">
               </div>
             </div>
+
           </div>
+
+          <div class="field">
+            <label>E- Mail</label>
+          <div class="two fields">
+              <div class="field">
+                <input type="text" name="customer[e-mail]" placeholder="E-Mail">
+              </div>
+              <div class="field">
+                <input type="text" name="customer[phone]" placeholder="Phone">
+              </div>
+            </div>
+         </div>
+
+         <h4 style="margin-button:50px" class="ui dividing header">Partnership Information</h4>
+
+         <div class="field">
+          <div class="two fields">
+              <div class="field">
+                <input type="text" name="customer[company-name]" placeholder="Company Name">
+              </div>
+              <div class="field">
+                <input type="text" name="customer[website]" placeholder="Website">
+              </div>
+            </div>
+         </div>
+
+         <div class="two fields">
+              <div class="field">
+                <input type="text" name="customer[govID]" placeholder="Gov ID">
+              </div>
+            </div>
       </div>
+
+
 <script>
   $("#new-user-button").click( function(){
               $("#new-user-modal").modal("show");
